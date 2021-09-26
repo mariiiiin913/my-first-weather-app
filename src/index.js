@@ -23,7 +23,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let description = document.querySelector("#description");
@@ -71,9 +70,18 @@ function showFahrenheit(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
+function showCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
 let celsiusTemperature = null;
 
 let fahrenheitlink = document.querySelector("#fahrenheit-link");
 fahrenheitlink.addEventListener("click", showFahrenheit);
+
+let celsiuslink = document.querySelector("#celsius-link");
+celsiuslink.addEventListener("click", showCelsius);
 
 search("Tokyo");
