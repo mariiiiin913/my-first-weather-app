@@ -1,11 +1,15 @@
+body {
+  font-family: "DM Serif Display", serif;
+}
+
 h1 {
-  color: rgb(135, 135, 135);
+  color: black;
   display: block;
-  font-family: Arial, sans-serif;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 100;
   line-height: 28px;
-  margin-bottom: 0;
+  margin: 10px auto 20px;
+  padding-left: 30px;
 }
 ul {
   margin: 0;
@@ -14,11 +18,11 @@ ul {
 li {
   list-style: none;
   margin: 0;
-  padding: 0;
-  color: rgb(135, 135, 135);
+  padding-left: 25px;
+  color: rgb(246, 242, 242);
   font-size: 16px;
   font-weight: 100;
-  line-height: 19px;
+  line-height: 20px;
 }
 li:first-letter {
   text-transform: capitalize;
@@ -28,6 +32,7 @@ li:first-letter {
   margin: 30px auto;
 }
 .weather-app {
+  background: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
@@ -37,6 +42,9 @@ li:first-letter {
 .overview {
   margin-bottom: 20px;
 }
+.clearfix.weather-temperature {
+  padding-left: 20px;
+}
 .weather-temprtature img {
   margin-right: 10px;
   height: 64px;
@@ -44,11 +52,12 @@ li:first-letter {
 }
 .float-left {
   float: left;
+  padding-left: 10px;
 }
 .weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
-  line-height: 1;
+  line-height: 90px;
   font-weight: 400;
 }
 .weather-temperature .units {
@@ -66,7 +75,20 @@ li:first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+.btn-primary {
+  background-color: #704c91;
+  border-color: #704c91;
+}
+.btn-primary:hover {
+  color: #704c91;
+  background-color: #fff;
+  border-color: #704c91;
+}
 #celsius-link,
 #fahrenheit-link {
   text-decoration: none;
+}
+#humidity-list,
+#wind-list {
+  padding-left: 80px;
 }
