@@ -3,13 +3,13 @@ body {
 }
 
 h1 {
-  color: black;
+  color: rgb(29, 5, 42);
   display: block;
-  font-size: 40px;
-  font-weight: 100;
+  font-size: 43px;
+  font-weight: 100px;
   line-height: 28px;
   margin: 10px auto 20px;
-  padding-left: 30px;
+  padding: 10px 0px 5px 23px;
 }
 ul {
   margin: 0;
@@ -19,12 +19,10 @@ li {
   list-style: none;
   margin: 0;
   padding-left: 25px;
-  color: rgb(246, 242, 242);
+  color: #f8f8f1;
   font-size: 16px;
   font-weight: 100;
   line-height: 20px;
-}
-li:first-letter {
   text-transform: capitalize;
 }
 .weather-app-wrapper {
@@ -38,6 +36,7 @@ li:first-letter {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  border-color: rgb(79, 10, 117);
 }
 .overview {
   margin-bottom: 20px;
@@ -55,7 +54,7 @@ li:first-letter {
   padding-left: 10px;
 }
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: rgb(29, 5, 42);
   font-size: 64px;
   line-height: 90px;
   font-weight: 400;
@@ -91,4 +90,7 @@ li:first-letter {
 #humidity-list,
 #wind-list {
   padding-left: 80px;
+}
+#city-input.form-control {
+  background-color: #f9f9f6;
 }
