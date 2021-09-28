@@ -85,20 +85,18 @@ li {
   border-color: #704c91;
   transition: all 200ms ease-in-out;
 }
-.weather-forcast {
-  margin-top: 20px;
-  text-align: center;
-}
-.weather-forcast-date {
+.weather-forecast-date {
   font-size: 16px;
   color: rgb(29, 5, 42);
+}
+.weather-forecast-temperature-min {
   opacity: 0.5;
 }
-.weather-forcast-temperature-min {
-  opacity: 0.5;
-}
-.weather-forcast-temperature {
+.weather-forecast-temperatures {
   font-size: 13px;
+}
+.col-2 {
+  text-align: center;
 }
 #celsius-link,
 #fahrenheit-link {
@@ -106,7 +104,7 @@ li {
 }
 #humidity-list,
 #wind-list {
-  padding-left: 80px;
+  padding-left: 20px;
 }
 #city-input.form-control {
   background-color: #f9f9f6;
