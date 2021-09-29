@@ -23,6 +23,8 @@ li {
   font-size: 16px;
   font-weight: 100;
   line-height: 21px;
+}
+li::first-letter {
   text-transform: capitalize;
 }
 .weather-app-wrapper {
@@ -98,16 +100,12 @@ li {
 .col-2 {
   text-align: center;
 }
-#celsius-link,
-#fahrenheit-link {
-  text-decoration: none;
-}
 #humidity-list,
 #wind-list {
   padding-left: 20px;
 }
 #humidity-list {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 #city-input.form-control {
   background-color: #f9f9f6;
